@@ -3,7 +3,7 @@ kind: ClusterConfig
 
 metadata:
   name: eks-acg
-  region: us-east-2
+  region: us-east-1
   version: "1.24"
 
 vpc:
@@ -11,6 +11,6 @@ vpc:
 
 nodeGroups:
   - name: eks-node-group
-    instanceType: t3.micro
+    instanceType: t2.medium
     desiredCapacity: 3
     privateNetworking: true
